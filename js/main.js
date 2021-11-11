@@ -208,6 +208,28 @@
 		}
 	};
 
+	$(document).ready(function(){
+  $('#team-carousel').owlCarousel({
+    autoplay:true,
+    loop:true,
+    autoplayHoverPause:true,
+    autoplayTimeout:8000,
+    smartspeed:1200,
+    dotsSpeed:1000,
+    responsive :{
+      0:{
+          items:1
+      },
+      768:{
+        items:2
+      },
+      992:{
+        items:3
+      }
+    }
+  });
+});
+
 	// Parallax
 	var parallax = function() {
 		$(window).stellar();
